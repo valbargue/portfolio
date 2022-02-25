@@ -1,0 +1,573 @@
+@font-face {
+    font-family: Poppins SemiBold;
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins Light;
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins ExtraLight;
+    src: url(../fonts/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: Poppins Regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.lettre {
+    color: #484848;
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    font-family: Poppins Regular;
+    animation: flash 1.2s linear infinite; 
+}
+
+.lettre:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 1s;
+}
+
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+@keyframes flash {
+    0% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }
+    90% {
+        color: #484848;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900;
+    }       
+}
+                    
+                    /* PARALLAXE  */
+
+#parallax {
+    background: url(../img/background_top.jpg) repeat fixed 100%;
+    background-size: cover;
+}
+
+.parallax-inner {
+    padding: 19.5% 15rem;
+    color: white;
+    position: relative;
+    
+}
+
+.parallax-inner p {
+    font-family: Poppins light;
+    font-size: 2rem;
+    
+}
+
+.parallax-savoir {
+    background: url(../img/ordinateur.jpg) repeat fixed 100%;
+    object-fit: cover;
+    }
+
+.parallax-inner-savoir {
+    padding: 12%;
+    box-shadow: 1px 1px 10px black;
+    }
+
+.parallax-folio {
+    background: url(../img/projet.jpg)no-repeat fixed 100%;
+    object-fit: cover;
+    }
+
+.parallax-inner-folio {
+    padding: 12%;
+    box-shadow: 1px 1px 10px black;    box-shadow: 1px 1px 10px black;
+    }
+
+
+.parallax-contact {
+    background: url(../img/contact.jpg)no-repeat fixed 100%;
+    object-fit: cover;
+    }
+
+.parallax-inner-contact {
+    padding: 5%;
+    box-shadow: 1px 1px 10px black;
+    }
+
+
+
+                /* BANNIERE */
+
+h1 {
+    font-family: Poppins SemiBold;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.parallax-inner a {
+text-decoration: none;
+text-transform: uppercase;
+position: absolute;
+bottom: 4em;
+left: 50%;
+transform: translateX(-50%);
+font-family: Poppins Regular;
+
+color: white;
+background: #cc8b65;
+border: 1px solid #cc8b65;
+border-radius: 5px;
+padding: 15px 20px;
+
+transition: all 0.4s ease-in;
+}
+
+.parallax-inner a:hover {
+    border: 1px solid white;
+    background: none;
+    color: white;
+}
+
+                        /* MENU NAV */
+.main-menu {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem;
+}
+
+.img-menu {
+    width: 10%;
+    padding-right: 3rem
+}
+
+.img-menu img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-menu nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu nav ul li {
+    font-family: Poppins ExtraLight ;
+    font-size: 1.3rem;  
+
+    list-style-type: none;  
+    padding: 0.2rem 2rem;
+    border: 1px solid white;
+
+    transition: all 0.2s ease-in;
+}
+
+.main-menu  a {
+    text-decoration: none;
+    color: black;
+}
+.main-menu li:hover {
+    background: #cc8b65;
+
+}
+
+.main-menu li:hover a {
+    color: white;
+}
+
+
+.main-menu ul>li>span {
+    color: #cc8b65;
+}
+
+.main-menu ul>li>span:hover {
+    color: white;
+}
+
+                        /* PRESENTATION */
+
+#presentation {
+    background-color: #013328;
+    padding-bottom: 4em;
+}
+
+.pres-content {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: Poppins Light;
+    color: white;
+}
+
+.pres-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 3rem 0;
+}
+
+.pres-content p {
+    text-align: justify;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+}
+
+
+
+                    /* SECTION SAVOIR */
+
+#savoir {
+    margin-bottom: 5em;
+}                    
+.title-section h2 {
+    border-bottom: 1px solid black;
+}
+.title {
+    font-family: Poppins Regular;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 3rem 0;
+
+}
+
+.flex-savoir {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+i {
+    margin: 2rem 0;
+    font-size: 4rem;
+}
+
+.bloc-savoir {
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Poppins Regular;
+    font-size: 1rem;
+
+    margin: 0 2rem;
+}
+
+.content-savoir {
+    text-align: center;
+    width: 60%;
+    line-height: 2rem;
+}
+
+                    /* PORTFOLIO CARROUSSEL */
+.swiper mySwiper {
+    margin: 3em 0;
+}
+.swiper {
+    width: 60%;
+    height: 90%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+  }
+
+.swiper-slide a img {
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 181PX;
+    display: block;
+}
+
+.swiper-slide a {
+    font-family: Poppins Regular;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+  
+
+        /* SECTION CONTACT */
+
+#contact {
+    margin: 9em 0 0;
+}
+
+.container-contact {
+    margin: 0 auto;
+}
+
+.container-contact h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.container-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+
+
+}
+.container-contact form input {
+    width: 100%;
+    padding: 1em ;
+    margin-bottom: 20px;
+
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    /* transition: 444ms ease-in; */
+        
+    font-family: Poppins Regular;
+}
+
+/* .container-contact form input:hover {
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+} */
+
+
+.container-contact form textarea {
+    width: 100%;
+    height: 5em;
+    padding: 1em;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: Poppins Regular;
+
+    background: none ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+} 
+
+/* .container-contact form textarea:hover {
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px white, -2px -2px 5px white;
+} */
+
+.container-contact form button {
+    text-decoration: none;
+    text-transform: uppercase;
+    bottom: 5em;
+    font-family: Poppins Regular;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px 20px;
+    transition: 0.2s ease-in;
+}
+
+.container-contact form button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    /* padding: 20px 30px; */
+    opacity: 0.7;
+    
+}
+
+
+                    /* FOOTER */
+
+footer {
+    background-color: #484848;
+    color: white;
+    display: flex;          
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Poppins light;
+    padding: 1em 0;
+}
+
+.foot-content i {
+    padding: 0 10px;
+    font-size: 2em;
+}
+
+.foot-content a {
+    color: white;
+}
+
+footer a {
+    color: white;
+    font-family: Poppins light;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+                    /* BOUTON TOP */
+
+#scrollUp {
+    position: fixed;
+    bottom : 10px;
+    right: -100px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+#scrollUp:hover {
+    bottom: 20px;
+}
+
+
+                    /* RESPONSIVE */
+
+@media only screen and (max-width: 1024px) {
+
+    .parallax-inner {
+        padding: 19.5% 5rem;
+        color: white;
+        position: relative;
+    }
+
+    .pres-content  {
+        text-align: justify;
+        width: 60%;
+    }
+    .pres-content p {
+        width: 100%;
+    }
+
+    .swiper {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 925px) {
+
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu img {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    #parallax {
+        background: url(../img/background_top_tab.jpg) no-repeat  fixed 100%;
+        background-size:cover;
+        background-position: center;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .parallax-inner a {
+        bottom: 2em;
+    }
+
+    .parallax-inner p {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .main-menu nav ul {
+        flex-direction: column;
+        line-height: 24px;
+    }
+
+    .main-menu nav ul li {
+        font-size: 1.1rem;
+    }
+
+    .flex-savoir {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .bloc-savoir {
+        width: 60%;
+    }
+
+    .swiper {
+        width: 90%;
+    }
+}
